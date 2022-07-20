@@ -148,6 +148,7 @@ public class Bot extends TelegramLongPollingBot {
     }
 
     private Optional<Double> parseDouble(String messageText) {
+
         try{
             return Optional.of(Double.parseDouble(messageText));
         }catch (Exception e) {
